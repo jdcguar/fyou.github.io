@@ -1190,3 +1190,22 @@ body {
 .not-loaded * {
     animation-play-state: paused !important;
 }
+
+
+/* CSS para el mensaje en la parte superior */
+.top-message {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    color: #fff; /* Color del texto */
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* Asegura que el mensaje esté al frente */
+    font-size: 16px;
+}
+
+/* Asegura que el contenido principal no quede cubierto por el mensaje */
+body {
+    padding-top: 40px; /* Ajusta este valor según la altura de .top-message */
+}
